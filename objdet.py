@@ -16,8 +16,8 @@ def load_yolo_model():
 # Load MobileNet SSD model
 @st.cache_resource
 def load_mobilenet_ssd():
-    prototxt_path = r"D:/Kiki/pg/ObjectDet/Models/MobileNet SSD/deploy.prototxt"
-    model_path = r"D:/Kiki/pg/ObjectDet/Models/MobileNet SSD/mobilenet_iter_73000.caffemodel"
+    prototxt_path = "deploy.prototxt"
+    model_path = "mobilenet_iter_73000.caffemodel"
     model = cv2.dnn.readNetFromCaffe(prototxt_path, model_path)
     return model
 
